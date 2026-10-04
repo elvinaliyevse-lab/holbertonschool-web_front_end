@@ -180,14 +180,14 @@
   /* Grid
       ============================= */
   
+  .row {
+    display: flex;
+  }
+  
   ul.row {
     margin: 0;
     padding: 0;
     list-style: none;
-  }
-  
-  .row {
-    display: flex;
   }
   
   [class*='col-'] {
@@ -371,15 +371,13 @@
     padding: 10rem 40rem 2rem 0;
   }
   
-  /* Section latest news
-      ============================= */
+  /* Section Latest news ============================= */
 
   .section-latest-news .row {
     flex-direction: row-reverse;
   }
 
-  /* Section SERVICES
-      ============================= */
+  /* Section SERVICES ============================= */
 
   .section-services .row {
     flex-wrap: wrap;
