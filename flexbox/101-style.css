@@ -1,0 +1,50 @@
+/* Five boxes in a row, centred on both axes by flexbox alone. */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.box1 {
+  width: 84px;
+  height: 64px;
+  font-size: 14px;
+  background-color: #167a73;
+}
+
+.box2 {
+  width: 126px;
+  height: 84px;
+  font-size: 30px;
+  background-color: #2f5fa7;
+}
+
+.box3 {
+  width: 250px;
+  height: 150px;
+  font-size: 72px;
+  background-color: #1d2433;
+}
+
+.box4 {
+  width: 126px;
+  height: 84px;
+  font-size: 30px;
+  background-color: #7a3f8f;
+}
+
+.box5 {
+  width: 84px;
+  height: 64px;
+  font-size: 14px;
+  background-color: #b3401d;
+}
