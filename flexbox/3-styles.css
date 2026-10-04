@@ -129,7 +129,7 @@ ul.row {
 }
 
 [class*='col-'] {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .col-1-3 {
