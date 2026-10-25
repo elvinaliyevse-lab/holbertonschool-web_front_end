@@ -1,10 +1,9 @@
-// a function that displays 3 alerts
-
-function welcomeMessage(fullName){
-	alert('welcome' + fullName);
+function welcomeMessage(fullName) {
+  return function () {
+    alert(`Welcome ${fullName}`);
+  };
 }
 
-guillame = function() {welcomeMessage(" "+"Guillaume")};
-alex = function() {welcomeMessage(" "+"Alex")};
-fred = function() {welcomeMessage(" "+"Fred")};
-
+const guillaume = welcomeMessage('Guillaume');
+const alex = welcomeMessage('Alex');
+const fred = welcomeMessage('Fred');

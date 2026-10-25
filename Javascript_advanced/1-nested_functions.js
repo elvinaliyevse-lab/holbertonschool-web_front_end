@@ -1,17 +1,21 @@
-// a function that displays 3 alerts
+const globalVariable = 'Welcome';
 
-let globalVariable = 'Welcome';
-function outer () {
-	alert(globalVariable);
-	let course = 'Holberton';
-	function inner () {
-		alert(globalVariable + course);
-		const exclamation = '!';
-		function inception (){
-		alert(globalVariable + course + exclamation);	
-        }
-        inception();
+function outer() {
+  alert(globalVariable);
+  const course = 'Holberton';
+
+  function inner() {
+    alert(`${globalVariable} ${course}`);
+    const exclamation = '!';
+
+    function inception() {
+      alert(`${globalVariable} ${course}${exclamation}`);
     }
-    inner();
+
+    inception();
+  }
+
+  inner();
 }
+
 outer();

@@ -1,21 +1,25 @@
+function countPrimeNumbers() {
+  let primeCount = 0;
 
-function countPrimeNumbers(number){
-	for (let counter = 0; counter <= 100; counter++) {
-		let notPrime = false;
-		for (let i = 2; i < number; i++) {
-        	if (counter%i===0 && i!==counter) {
-				notPrime = true;
-			}
-		}
-		if (notPrime === false) {
-                console.log(counter);
-		}
-	}
+  for (let number = 2; number <= 100; number += 1) {
+    let isPrime = true;
+
+    for (let divisor = 2; divisor <= Math.sqrt(number); divisor += 1) {
+      if (number % divisor === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+
+    if (isPrime) {
+      primeCount += 1;
+    }
+  }
+
+  return primeCount;
 }
 
-
-let t0 = performance.now();
+const startTime = performance.now();
 countPrimeNumbers();
-let t1 = performance.now();
-
-console.log(`Execution time of printing countPrimeNumbers was ${(t1- t0)/100} milliseconds`);
+const endTime = performance.now();
+console.log(`Execution time of printing countPrimeNumbers was ${endTime - startTime} milliseconds.`);
