@@ -25,7 +25,7 @@ function main() {
   modes.forEach(([label, change]) => {
     const button = document.createElement('button');
     button.textContent = label;
-    button.addEventListener('click', change);
+    button.onclick = change;
     document.body.appendChild(button);
   });
 }
